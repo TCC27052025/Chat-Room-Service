@@ -1,8 +1,7 @@
 package com.chatroom.Service;
 
-import com.chatroom.DTO.ChatRoomRequestDTO;
-import com.chatroom.DTO.ChatRoomResponseDTO;
+import com.chatroom.DTO.ChatRoomResponse;
 
 public interface ChatRoomService {
-    ChatRoomResponseDTO createOrGetChatRoom(ChatRoomRequestDTO requestDTO);
+    ChatRoomResponse findOrCreateChatRoom(Long userOneId, Long userTwoId);
 }
